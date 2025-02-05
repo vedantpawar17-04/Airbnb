@@ -1,5 +1,5 @@
 const cloudinary = require('cloudinary').v2;
-const { CloudinaryStorage } = require('multer-storage-cloudinary --legacy-peer-deps');
+const { CloudinaryStorage } = require('multer-storage-cloudinary');
 //process.env=process environment
 cloudinary.config({
     cloud_name: process.env.CLOUD_NAME,
