@@ -1,0 +1,32 @@
+<% layout('/layouts/boilerplate') -%>
+<body>
+<div class="row mt-3">
+    <h1 class="col-8 offset-2 mb-3">SignUp On Wanderlust</h1>
+    <div class="col-8 offset-2"> 
+        <form action="/signup" method="POST" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input name="username" id="username" type="text" class="form-control" required> 
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    username is typically that it should consist of letters (a-z,A-Z), numbers (0-9) and potentially underscores (_).
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input name="email" id="email" type="text" class="form-control" required> 
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input name="password" id="password" type="password" class="form-control" required> 
+                <div class="invalid-feedback">
+                    Your password must be 8-20 characters long, contain atleast 1 uppercase, number and special symbols.
+                </div>
+            </div>
+            <button class="btn btn-success mb-4 mt-2">SignUp</button>
+        </form>
+    </div>   
+</div>    
+</body>
